@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+form {
+  position: relative;
+  display: flex;
+  font-family: 'Inter', sans-serif;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-around;
+
+  padding-bottom: 20px;
+}
+
+border-line {
+  width: 1px;
+  height: 760px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+form col-left {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+  height: auto;
+  gap: 32px;
+}
+
+form col-left order-details {
+  font-family: 'Noto Sans', sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-around; */
+  gap: 32px;
+}
+
+form col-left order-details{
+  font-family: 'Noto Sans', sans-serif;
+  
+}
+
+form col-left input-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 8px;
+}
+
+label {
+  font-size: 16px;
+  padding: 8px;
+}
+
+input {
+  padding: 16px;
+  width: 600px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+form col-right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  align-items: stretch;
+}
+
+form col-right design-details {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 10px;
+}
+
+form col-right design-details input-field {
+  font-family: 'Noto Sans', sans-serif;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+upload-input {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: stretch;
+}
+
+upload-input input {
+  display: none;
+  width: 200px;
+  height: 100px;
+}
+
+file-name {
+  display: block;
+  width: 390px;
+  height: 50px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+upload-input button {
+  /* border-radius: 8px;
+  border: 1px;
+  background-color: #843a3a;
+  color: white;
+  padding-left: 72px;
+  padding-right: 72px;
+  font-size: large;
+  cursor: pointer; */
+}
+
+design-details submit-button {
+  padding-top: 20px;
+  padding-left: 300px;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+}
+
+design-details submit-button button {
+  cursor: pointer;
+  height: 50px;
+  width: 300px;
+  border-radius: 8px;
+  border: 1px;
+  background-color: #843a3a;
+  color: white;
+  font-size: larger;
+}
+
+.upload-file{
+  font-size: large;
+  padding-left: 68px;
+  padding-right: 68px;
+  border: 2px solid #843a3a;
+  background-color: #843a3a;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Noto Sans', sans-serif;
+}
