@@ -13,12 +13,12 @@ export const setOrders = async (
 ) => {
   try {
     const order = await addDoc(collection(db, "Orders"), {
-      Org: name,
+      "Organization": name,
       "Contact Number": contact,
-      email: email,
-      quantity: quantity,
-      instructions: instructions,
-      address: address,
+      "email": email,
+      "quantity": quantity,
+      "instructions": instructions,
+      "address": address,
     });
 
     return order;
