@@ -23,9 +23,6 @@ const Navbar = () => {
                 <a href="#">Women</a>
             </li>
             <li>
-                <a href="#">Wardrobe collections</a>
-            </li>
-            <li>
                 <a href="#">Blog</a>
             </li>
             <li>
@@ -36,6 +33,9 @@ const Navbar = () => {
             </li>
             <li>
                 <a href="#">Rentals</a>
+            </li>
+            <li>
+                <a href="#">College Merch</a>
             </li>
         </ul>
 
