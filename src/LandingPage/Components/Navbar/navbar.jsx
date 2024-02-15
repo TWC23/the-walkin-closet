@@ -29,9 +29,6 @@ const Navbar = () => {
                 <a href="#">Women</a>
             </li>
             <li>
-                <a href="#">Wardrobe collections</a>
-            </li>
-            <li>
                 <a href="#">Blog</a>
             </li>
             <li>
