@@ -1,11 +1,15 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
+
 import "./Form.css";
 import {
   setOrders,
   uploadFiles,
   uploadImages,
 } from "../../../FirebaseFunctions/firebase";
-import { OrderFiller } from "../../../assets";
+// import { OrderFiller } from "../../../assets";
+import PopUp from "../../../customs/popup";
+import { useNavigate, useParams } from "react-router-dom";
+import Navbar from "../../../LandingPage/Components/Navbar/navbar";
 const Form = () => {
   const [org, setOrg] = useState();
   const [contact, setContact] = useState();
@@ -15,19 +19,54 @@ const Form = () => {
   const [address, setAddress] = useState();
   const [details, setDetails] = useState();
   const [design, setDesign] = useState();
-
+  const [visibility, setVisibility] = useState(false);
+  const [heading, setHeading] = useState("");
+  const [modalContent, setModalContent] = useState();
+  const navigate = useNavigate();
+  const {category} = useParams();
+  console.log(category)
 
   const submitHandler = async () => {
-    setOrders(org, contact, email, quantity, instructions, address);
-    uploadFiles(org, details);
-    uploadImages(org, design);
+    if (
+      org == null ||
+      contact == null ||
+      email == null ||
+      quantity == null ||
+      instructions == null ||
+      address == null ||
+      details == null ||
+      design == null
+    ) {
+      setVisibility(!visibility);
+      setHeading("Empty Fields");
+      setModalContent("Please fill all the fields");
+      console.log(visibility);
+    } else {
+      try {
+        await setOrders(org, contact, email, quantity, instructions, address);
+        await uploadFiles(org, details);
+        await uploadImages(org, design);
+        navigate("/thanks");
+      } catch (e) {
+        setVisibility(!visibility);
+        setHeading("Submission Failed");
+        setModalContent(e.message);
+      }
+    }
   };
 
+  const closeHandler = () => {
+    setVisibility(!visibility);
+  };
 
-
-  
   return (
+    <>
+    <Navbar/>
     <form>
+      <PopUp onClose={closeHandler} show={visibility} title={heading}>
+        {modalContent}
+      </PopUp>
+
       <col-left>
         <h1>Order Details</h1>
         <order-details>
@@ -76,7 +115,7 @@ const Form = () => {
 
       <col-right>
         <filler-image>
-          <img src={OrderFiller} alt="" />
+          <img src={`../../../../src/assets/${category}.jpg`} alt="" />
         </filler-image>
         <design-details>
           <h1>Design Details</h1>
@@ -104,7 +143,13 @@ const Form = () => {
                 <file-name>{details?.name}</file-name>
                 <label className="upload-file" htmlFor="formId1">
                   Upload
-                  <input name="" type="file" id="formId1" hidden onChange={(e) => setDetails(e.target.files[0])} />
+                  <input
+                    name=""
+                    type="file"
+                    id="formId1"
+                    hidden
+                    onChange={(e) => setDetails(e.target.files[0])}
+                  />
                 </label>
                 {/* <input
                   onChange={handleChangeDetails}
@@ -130,7 +175,13 @@ const Form = () => {
                 <file-name>{design?.name}</file-name>
                 <label className="upload-file" htmlFor="formId2">
                   Upload
-                  <input name="" type="file" id="formId2" hidden onChange={(e) => setDesign(e.target.files[0])} />
+                  <input
+                    name=""
+                    type="file"
+                    id="formId2"
+                    hidden
+                    onChange={(e) => setDesign(e.target.files[0])}
+                  />
                 </label>
 
                 {/* <input
@@ -153,6 +204,7 @@ const Form = () => {
 
       <input-fields></input-fields>
     </form>
+    </>
   );
 };
 

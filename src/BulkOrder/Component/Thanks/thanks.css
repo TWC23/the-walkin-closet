@@ -1,0 +1,37 @@
+heading{
+    font-size: 200px;
+}
+
+sub-head{
+    font-size: 64px;
+}
+
+message{
+    padding-left: 10%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: space-between;
+}
+
+
+thanks-body{
+    margin-top: 40px ;
+    height: 285px;
+    position: relative;
+    font-size: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+next-heading,assistance-heading,greeting-heading{
+    font-weight: 600;
+}
+
+.email{
+    font-weight: 600;
+}
+

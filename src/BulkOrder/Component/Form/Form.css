@@ -151,3 +151,17 @@ design-details submit-button button {
   cursor: pointer;
   font-family: 'Noto Sans', sans-serif;
 }
+
+filler-image{
+  height: 256px;
+  width: 256px;
+  object-fit: cover;
+  align-self: center;
+  justify-self: center;
+}
+
+img{
+  border-radius: 8px;
+  height: 100%;
+}
+

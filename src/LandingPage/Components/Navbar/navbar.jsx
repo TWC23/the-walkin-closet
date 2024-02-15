@@ -1,8 +1,14 @@
+import { useNavigate } from 'react-router-dom'
 import {bag, Profile, favorite, search, logo, walkincloset} from '../../../assets/index'
 import './navbar.css'
 
 
 const Navbar = () => {
+
+
+    const navigate = useNavigate()
+
+
   return (
     <nav>
         
@@ -37,9 +43,14 @@ const Navbar = () => {
             <li>
                 <a href="#">Rentals</a>
             </li>
+            
         </ul>
 
-        <ul>
+        <college-merch href="/bulk-order">
+        <p onClick={() => navigate("/bulk-order")}>College Merch</p>
+        </college-merch>
+
+        {/* <ul>
             <li>
                 <img src={search} alt="" />
 </li>
@@ -56,7 +67,7 @@ const Navbar = () => {
             <img src={Profile} alt="" />
 
             </li>
-        </ul>
+        </ul> */}
         
     </nav>
   )
