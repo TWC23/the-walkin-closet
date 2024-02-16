@@ -156,8 +156,8 @@ filler-image{
   height: 256px;
   width: 256px;
   object-fit: cover;
-  align-self: center;
-  justify-self: center;
+  align-self: flex-start;
+  justify-self: flex-start;
 }
 
 img{

@@ -1,15 +1,16 @@
 import { useState } from "react";
 
+
 import "./Form.css";
 import {
   setOrders,
   uploadFiles,
   uploadImages,
 } from "../../../FirebaseFunctions/firebase";
-// import { OrderFiller } from "../../../assets";
 import PopUp from "../../../customs/popup";
 import { useNavigate, useParams } from "react-router-dom";
 import Navbar from "../../../LandingPage/Components/Navbar/navbar";
+import  {OrderFiller}  from "../../../../src/assets/index.js";
 const Form = () => {
   const [org, setOrg] = useState();
   const [contact, setContact] = useState();
@@ -24,7 +25,6 @@ const Form = () => {
   const [modalContent, setModalContent] = useState();
   const navigate = useNavigate();
   const {category} = useParams();
-  console.log(category)
 
   const submitHandler = async () => {
     if (
@@ -115,7 +115,7 @@ const Form = () => {
 
       <col-right>
         <filler-image>
-          <img src={`../../../../src/assets/${category}.jpg`} alt="" />
+          <img src={OrderFiller} alt="" />
         </filler-image>
         <design-details>
           <h1>Design Details</h1>
