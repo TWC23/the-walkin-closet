@@ -7,12 +7,9 @@ const Navbar = () => {
 
     return (
         <nav>
-            <a href="#" onClick={() => navigate("/")} className="logo">
+            <a href="/" onClick={() => navigate("/")}>
+                <img src={UpdatedLogo} alt="TWC logo" className='logo-img' />
             </a>
-            <img src={UpdatedLogo} className='logo-img' />
-                {/* <img src={walkincloset}  className='logo-img1'/>
-                <img src={logo} className='logo-img2' /> */}
-
             <ul>
                 <li>
                     <a href="#">Men</a>
@@ -32,11 +29,13 @@ const Navbar = () => {
                 <li>
                     <a href="#">Rentals</a>
                 </li>
+                <li>
+                    <a href="/bulk-order" onClick={() => navigate("/bulk-order")}>
+                        College Merch
+                    </a>
+                </li>
             </ul>
 
-            <college-merch href="/bulk-order">
-                <p onClick={() => navigate("/bulk-order")}>College Merch</p>
-            </college-merch>
 
             {/* <ul>
                 <li>
@@ -54,7 +53,7 @@ const Navbar = () => {
                 </li>
             </ul> */}
         </nav>
-  )
+    )
 }
 
 export default Navbar
