@@ -8,13 +8,18 @@ form {
   flex-direction: row;
   align-items: stretch;
   justify-content: space-around;
+  height: 85vh;
+}
 
-  padding-bottom: 20px;
+h1 {
+  font-size: 1.8vw;
+  align-self: flex-start;
+  font-family: 'Inter', sans-serif;
 }
 
 border-line {
   width: 1px;
-  height: 760px;
+  height: 96%;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -23,9 +28,9 @@ form col-left {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  
-  height: auto;
-  gap: 32px;
+  justify-content: flex-start;
+  height: 100%;
+  gap: 4vw;
 }
 
 form col-left order-details {
@@ -34,14 +39,11 @@ form col-left order-details {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: space-around; */
-  gap: 32px;
+  justify-content: space-around;
+  /* gap: 2vw; */
 }
 
-form col-left order-details{
-  font-family: 'Noto Sans', sans-serif;
-  
-}
+
 
 form col-left input-field {
   display: flex;
@@ -51,7 +53,7 @@ form col-left input-field {
 }
 
 label {
-  font-size: 16px;
+  font-size: 1.1vw;
   padding: 8px;
 }
 
@@ -66,17 +68,21 @@ form col-right {
   position: relative;
   display: flex;
   flex-direction: column;
-
-  align-items: stretch;
 }
 
 form col-right design-details {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: stretch;
-  gap: 10px;
+  /* justify-content: space-between; */
+  /* align-items: stretch; */
+  gap: 0.5vw;
+}
+
+shipping-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 form col-right design-details input-field {
@@ -153,15 +159,15 @@ design-details submit-button button {
 }
 
 filler-image{
-  height: 256px;
-  width: 256px;
+  height: auto;
+  width: 22vw;
   object-fit: cover;
-  align-self: flex-start;
-  justify-self: flex-start;
+  align-self: center;
+  /* justify-self: flex-start */
 }
 
 img{
   border-radius: 8px;
-  height: 100%;
+  width: 100%;
 }
 
