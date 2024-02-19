@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import {bag, Profile, favorite, search, logo, walkincloset} from '../../../assets/index'
+import {bag, Profile, favorite, search, logo, walkincloset, UpdatedLogo} from '../../../assets/index'
 import './navbar.css'
 
 const Navbar = () => {
@@ -8,9 +8,10 @@ const Navbar = () => {
     return (
         <nav>
             <a href="#" onClick={() => navigate("/")} className="logo">
-                <img src={walkincloset}  className='logo-img1'/>
-                <img src={logo} className='logo-img2' />
             </a>
+            <img src={UpdatedLogo} className='logo-img' />
+                {/* <img src={walkincloset}  className='logo-img1'/>
+                <img src={logo} className='logo-img2' /> */}
 
             <ul>
                 <li>
@@ -34,7 +35,7 @@ const Navbar = () => {
             </ul>
 
             <college-merch href="/bulk-order">
-            <p onClick={() => navigate("/bulk-order")}>College Merch</p>
+                <p onClick={() => navigate("/bulk-order")}>College Merch</p>
             </college-merch>
 
             {/* <ul>
