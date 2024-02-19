@@ -6,6 +6,6 @@ import logo from './logo.png'
 import walkincloset from './The Walk-in Closet.png'
 import OrderFiller from './order-filler.svg'
 import ComingSoonBlur from './ComingSoonBlur.png'
+import UpdatedLogo from './twc_logo.svg'
 
-
-export {Profile, favorite, search, bag, logo, walkincloset, OrderFiller, ComingSoonBlur}
+export {Profile, favorite, search, bag, logo, walkincloset, OrderFiller, ComingSoonBlur, UpdatedLogo}
