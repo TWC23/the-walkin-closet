@@ -9,7 +9,7 @@ export const ComingSoonLandingPage = () => {
         <Navbar />
       </div>
 
-      <a href="https://www.instagram.com/_thewalk.incloset/" className="coming-soon">
+      <a className="coming-soon">
         <img src={ComingSoonBlur} alt="Coming Soon" />
       </a>
     </>
