@@ -10,7 +10,7 @@ import {
 import PopUp from "../../../customs/popup";
 import { useNavigate, useParams } from "react-router-dom";
 import Navbar from "../../../LandingPage/Components/Navbar/navbar";
-import  {OrderFiller}  from "../../../../src/assets/index.js";
+// import  {OrderFiller}  from "../../../../src/assets/index.js";
 const Form = () => {
   const [org, setOrg] = useState();
   const [contact, setContact] = useState();
@@ -114,9 +114,9 @@ const Form = () => {
       <border-line></border-line>
 
       <col-right>
-        <filler-image>
+        {/* <filler-image>
           <img src={OrderFiller} alt="" />
-        </filler-image>
+        </filler-image> */}
         <design-details>
           <h1>Design Details</h1>
           <input-field>
