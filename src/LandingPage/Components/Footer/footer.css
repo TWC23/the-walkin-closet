@@ -1,0 +1,37 @@
+.footer-social {
+  padding: 15px;
+  margin: 5px;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-social ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social a {
+  font-size: 30px;
+  color: #f4fffe;
+  border-style: none;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 100px;
+  display: inline-block;
+}
+.footer-social a img {
+  height: 30px;
+  width: 35px;
+}
+
+.footer-social a:hover {
+  background-color: darkred;
+  color: white;
+  -webkit-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+  -moz-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+  -o-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+  transition: background-color 0.6s ease-out, color 0.6s ease-out;
+}

@@ -1,5 +1,6 @@
 import Navbar from "./Components/Navbar/navbar"
-import { ComingSoonBlur } from '../assets/index'
+import { Footer } from "./Components/Footer/footer"
+import { ComingImage } from "./Components/Image display/ComingImage"
 import './ComingSoonLandingPage.css'
 
 export const ComingSoonLandingPage = () => {
@@ -9,9 +10,16 @@ export const ComingSoonLandingPage = () => {
         <Navbar />
       </div>
 
-      <a className="coming-soon">
+      {/* <div className="coming-soon">
         <img src={ComingSoonBlur} alt="Coming Soon" />
-      </a>
+      </div> */}
+      <div className="coming-soon">
+        <ComingImage />
+      </div>
+
+      <div className="footer">
+        <Footer />
+      </div>
     </>
   )
 }
