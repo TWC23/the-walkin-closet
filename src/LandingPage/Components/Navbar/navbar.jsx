@@ -1,9 +1,13 @@
+import React from 'react'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router-dom'
 import {bag, Profile, favorite, search, logo, walkincloset, UpdatedLogo} from '../../../assets/index'
 import './navbar.css'
 
 const Navbar = () => {
-    const navigate = useNavigate()
+    const navigate = useNavigate();
+    const notify = () => toast.info("Coming soon!");
 
     return (
         <nav>
@@ -12,22 +16,22 @@ const Navbar = () => {
             </a>
             <ul>
                 <li>
-                    <a href="#">Men</a>
+                    <a href="#" onClick={notify}>Men</a>
                 </li>
                 <li>
-                    <a href="#">Women</a>
+                    <a href="#" onClick={notify}>Women</a>
                 </li>
                 <li>
-                    <a href="#">Blog</a>
+                    <a href="#" onClick={notify}>Blog</a>
                 </li>
                 <li>
-                    <a href="#">Originals</a>
+                    <a href="#" onClick={notify}>Originals</a>
                 </li>
                 <li>
-                    <a href="#">Boutique Boulevard</a>
+                    <a href="#" onClick={notify}>Boutique Boulevard</a>
                 </li>
                 <li>
-                    <a href="#">Rentals</a>
+                    <a href="#" onClick={notify}>Rentals</a>
                 </li>
                 <li>
                     <a href="/bulk-order" onClick={() => navigate("/bulk-order")}>
@@ -36,6 +40,19 @@ const Navbar = () => {
                 </li>
             </ul>
 
+            <ToastContainer
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+                transition:Bounce
+            />
 
             {/* <ul>
                 <li>
