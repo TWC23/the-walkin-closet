@@ -1,7 +1,7 @@
 import { InstagramLogo } from "../../../assets/index";
 import "./footer.css"
 
-export const Footer = () => {
+const Footer = () => {
     return (
         <footer>
             <div className="footer-container">
@@ -40,6 +40,6 @@ export const Footer = () => {
             </div>
         </footer>
     )
-
 }
-        
+
+export default Footer;

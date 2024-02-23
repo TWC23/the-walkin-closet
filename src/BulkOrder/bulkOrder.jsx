@@ -12,7 +12,7 @@ const BulkOrder = () => {
       <Navbar/>
       <grid-body>
         <grid-container>
-          <h1>Categories</h1>
+          <h1 id="categories">Categories</h1>
           <grid-items>
             <grid-item>
               <img src="https://yourdesignstore.s3.amazonaws.com/uploads/yds/productImages/full/1629717737612384e9619ceYDS_Product_4@2x.jpg" alt="" className="grid-tile" />
