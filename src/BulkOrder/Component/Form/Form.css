@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
 form {
   position: relative;
   display: flex;
   font-family: "Inter", sans-serif;
   flex-direction: row;
   justify-content: space-around;
+  height: 85vh;
   background-color: #edededee;
   /* gap: 5vh; */
   margin-inline: 1vw;
@@ -170,7 +172,7 @@ filler-image {
   /* justify-self: flex-start */
 }
 
-img {
+form img {
   padding-top: 40px;
   border-radius: 8px;
   width: 100%;
