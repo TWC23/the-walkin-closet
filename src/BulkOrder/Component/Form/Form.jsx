@@ -10,6 +10,9 @@ import PopUp from "../../../customs/popup";
 import { useNavigate, useParams } from "react-router-dom";
 import Navbar from "../../../LandingPage/Components/Navbar/navbar";
 import { OrderFiller } from "../../../../src/assets/index.js";
+
+// TODO: Add pattern param to input fields for validation
+
 const Form = () => {
   const [org, setOrg] = useState();
   const [contact, setContact] = useState();
@@ -75,6 +78,8 @@ const Form = () => {
               <input
                 type="text"
                 id="name"
+                placeholder="Club/Project Name"
+                pattern=""
                 onChange={(e) => setOrg(e.target.value)}
               />
             </input-field>
@@ -84,6 +89,7 @@ const Form = () => {
               <input
                 type="text"
                 id="contact"
+                placeholder="Phone Number"
                 onChange={(e) => setContact(e.target.value)}
               ></input>
             </input-field>
@@ -93,6 +99,7 @@ const Form = () => {
               <input
                 type="email"
                 id="email"
+                placeholder="Email"
                 onChange={(e) => setEmail(e.target.value)}
               ></input>
             </input-field>
@@ -104,6 +111,7 @@ const Form = () => {
               <input
                 type="text"
                 id="address"
+                placeholder="Shipping Address"
                 onChange={(e) => setAddress(e.target.value)}
               ></input>
             </input-field>
@@ -123,6 +131,7 @@ const Form = () => {
               <input
                 type="number"
                 id="quantity"
+                placeholder="Enter Order Quantity"
                 onChange={(e) => setQuantity(e.target.value)}
               ></input>
             </input-field>
@@ -132,6 +141,7 @@ const Form = () => {
               <input
                 type="text"
                 id="instructions"
+                placeholder="Anything extra?"
                 onChange={(e) => setInstructions(e.target.value)}
               ></input>
             </input-field>
