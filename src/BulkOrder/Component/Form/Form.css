@@ -6,7 +6,6 @@ form {
   display: flex;
   font-family: "Inter", sans-serif;
   flex-direction: row;
-  align-items: stretch;
   justify-content: space-around;
   height: 85vh;
   background-color: #edededee;
