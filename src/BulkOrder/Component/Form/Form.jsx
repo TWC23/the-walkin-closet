@@ -114,7 +114,7 @@ const Form = () => {
 
         <col-right>
           <filler-image>
-            <img src={OrderFiller} alt="" />
+            <img src={OrderFiller} className="orderfiller" alt="" />
           </filler-image>
           <design-details>
             <h1>Design Details</h1>

@@ -1,20 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 
 form {
   position: relative;
   display: flex;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   flex-direction: row;
   align-items: stretch;
   justify-content: space-around;
   height: 85vh;
+  background-color: #edededee;
+  /* gap: 5vh; */
+  margin-inline: 1vw;
+  width: 80;
+  height: 108vh;
+  border-radius: 16px;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25) inset,
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 h1 {
   font-size: 1.8vw;
   align-self: flex-start;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 border-line {
@@ -34,7 +42,7 @@ form col-left {
 }
 
 form col-left order-details {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -42,8 +50,6 @@ form col-left order-details {
   justify-content: space-around;
   /* gap: 2vw; */
 }
-
-
 
 form col-left input-field {
   display: flex;
@@ -79,15 +85,15 @@ form col-right design-details {
   gap: 0.5vw;
 }
 
-shipping-details{
+shipping-details {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
 form col-right design-details input-field {
-  font-family: 'Noto Sans', sans-serif;
-  
+  font-family: "Noto Sans", sans-serif;
+
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -129,6 +135,7 @@ upload-input button {
 
 design-details submit-button {
   padding-top: 20px;
+  padding-bottom: 20px;
   padding-left: 300px;
   display: flex;
   flex-direction: row;
@@ -146,7 +153,7 @@ design-details submit-button button {
   font-size: larger;
 }
 
-.upload-file{
+.upload-file {
   font-size: large;
   padding-left: 68px;
   padding-right: 68px;
@@ -155,10 +162,10 @@ design-details submit-button button {
   color: white;
   border-radius: 5px;
   cursor: pointer;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
-filler-image{
+filler-image {
   height: auto;
   width: 22vw;
   object-fit: cover;
@@ -166,8 +173,8 @@ filler-image{
   /* justify-self: flex-start */
 }
 
-img{
+form img {
+  padding-top: 40px;
   border-radius: 8px;
   width: 100%;
 }
-
