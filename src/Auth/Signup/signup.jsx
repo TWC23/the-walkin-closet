@@ -1,3 +1,6 @@
+import { useState } from "react";
+import { auth } from "../../firebase-config";
+import { createUserWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { signInWithGoogle } from "../../FirebaseFunctions/firebase";
 import Navbar from "../../LandingPage/Components/Navbar/navbar";
@@ -5,7 +8,10 @@ import Footer from "../../LandingPage/Components/Footer/footer";
 import './signup.css';
 
 const SignUp = () => {
+    const [signupUsername, setSignupUsername] = useState();
+    const [signupPassword, setSignupPassword] = useState();
     const navigate = useNavigate();
+
     const googleLogin = () => {
         signInWithGoogle()
             .then((result) => {
@@ -15,6 +21,15 @@ const SignUp = () => {
                 console.log(error);
             });
     }
+
+    const signup = async () => {
+        try {
+            const user = await createUserWithEmailAndPassword(auth, signupUsername, signupPassword);
+            console.log(user);
+        } catch (error) {
+            console.log(error.message);
+        }
+    };
 
     return (
         <>
@@ -28,22 +43,40 @@ const SignUp = () => {
                     
                     <div className="input-container">
                         <label>Name</label>
-                        <input type="text" placeholder="John Doe" required />
+                        <input
+                            type="text"
+                            placeholder="John Doe"
+                            required />
                     </div>
                     <div className="input-container">
                         <label>Email</label>
-                        <input type="text" placeholder="example@gmail.com" required />
+                        <input
+                            type="text"
+                            placeholder="example@gmail.com"
+                            onClick={(event) => {
+                                setSignupUsername(event.target.value);
+                            }}
+                            required />
                     </div>
                     <div className="input-container">
                         <label>Phone Number</label>
-                        <input type="text" placeholder="XXXXXXXXXX" required />
+                        <input
+                            type="text"
+                            placeholder="XXXXXXXXXX"
+                            required />
                     </div>
                     <div className="input-container">
                         <label>Password</label>
-                        <input type="password" placeholder="Create password" required />
+                        <input
+                            type="password"
+                            placeholder="Create password"
+                            onClick={(event) => {
+                                setSignupPassword(event.target.value);
+                            }}
+                            required />
                     </div>
 
-                    <button className="signup-button"><p>Create Account</p></button>
+                    <button className="signup-button" onClick={signup}><p>Create Account</p></button>
                     <button className="google-login" onClick={ googleLogin }>
                         <img
                         src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png"
