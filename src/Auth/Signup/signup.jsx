@@ -8,7 +8,7 @@ import Footer from "../../LandingPage/Components/Footer/footer";
 import './signup.css';
 
 const SignUp = () => {
-    const [signupUsername, setSignupUsername] = useState();
+    const [signupEmail, setSignupEmail] = useState();
     const [signupPassword, setSignupPassword] = useState();
     const navigate = useNavigate();
 
@@ -24,7 +24,7 @@ const SignUp = () => {
 
     const signup = async () => {
         try {
-            const user = await createUserWithEmailAndPassword(auth, signupUsername, signupPassword);
+            const user = await createUserWithEmailAndPassword(auth, signupEmail, signupPassword);
             console.log(user);
         } catch (error) {
             console.log(error.message);
@@ -51,10 +51,10 @@ const SignUp = () => {
                     <div className="input-container">
                         <label>Email</label>
                         <input
-                            type="text"
+                            type="email"
                             placeholder="example@gmail.com"
-                            onClick={(event) => {
-                                setSignupUsername(event.target.value);
+                            onChange={(event) => {
+                                setSignupEmail(event.target.value);
                             }}
                             required />
                     </div>
@@ -70,7 +70,7 @@ const SignUp = () => {
                         <input
                             type="password"
                             placeholder="Create password"
-                            onClick={(event) => {
+                            onChange={(event) => {
                                 setSignupPassword(event.target.value);
                             }}
                             required />

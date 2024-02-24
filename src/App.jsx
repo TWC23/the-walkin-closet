@@ -15,7 +15,10 @@ const App = () => {
         <Route path="/thanks" Component={ThanksPage}></Route>
         <Route path="/order-form/:category" Component={Form}></Route>
         <Route path="/bulk-order" Component={BulkOrder}></Route>
-        <Route path="/" Component={ComingSoonLandingPage}></Route>
+
+        {/* Temporay landing page */}
+        <Route path="/" Component={Login}></Route>
+        <Route path="/comingsoon" Component={ComingSoonLandingPage}></Route>
         <Route path="/login" Component={Login}></Route>
         <Route path="/signup" Component={SignUp}></Route>
       </Routes>
