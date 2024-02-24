@@ -16,16 +16,16 @@ const Login = () => {
     const login = async () => {
         try {
             const user = await signInWithEmailAndPassword(auth, loginEmail, loginPassword);
-            console.log(user);
+            navigate("/comingsoon");
         } catch (error) {
             console.log(error.message);
         }
     };
-
+    
     const googleLogin = () => {
         signInWithGoogle()
-            .then((result) => {
-                console.log(result);
+        .then((result) => {
+                navigate("/comingsoon");
             })
             .catch((error) => {
                 console.log(error);

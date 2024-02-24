@@ -15,7 +15,7 @@ const SignUp = () => {
     const googleLogin = () => {
         signInWithGoogle()
             .then((result) => {
-                console.log(result);
+                navigate("/comingsoon");
             })
             .catch((error) => {
                 console.log(error);
@@ -25,12 +25,12 @@ const SignUp = () => {
     const signup = async () => {
         try {
             const user = await createUserWithEmailAndPassword(auth, signupEmail, signupPassword);
-            console.log(user);
+            navigate("/comingsoon");
         } catch (error) {
             console.log(error.message);
         }
     };
-
+    
     return (
         <>
             <div className="navbar">
