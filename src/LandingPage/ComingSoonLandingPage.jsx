@@ -1,6 +1,6 @@
 import Navbar from "./Components/Navbar/navbar"
-import { Footer } from "./Components/Footer/footer"
-import { ComingImage } from "./Components/Image display/ComingImage"
+import Footer from "./Components/Footer/footer"
+import ComingImage from "./Components/Image display/ComingImage"
 import './ComingSoonLandingPage.css'
 
 export const ComingSoonLandingPage = () => {

@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 
 grid-container {
-  
   font-family: "Inter", sans-serif;
   position: relative;
   background-color: rgba(238, 238, 238, 0.9333);
@@ -23,7 +22,6 @@ grid-body {
   position: relative;
   align-items: center;
   justify-content: center;
-
 }
 
 grid-items {
@@ -51,15 +49,13 @@ grid-item {
   height: 45vh;
 }
 
-
-
 .order-button {
   position: relative;
   font-family: "Noto Sans", sans-serif;
   transition: 0.5s ease;
   opacity: 0;
   /* position: relative; */
-  
+
   /* z-index: 2; */
   border-radius: 8px;
   background: #843a3a;
@@ -72,7 +68,7 @@ grid-item {
   cursor: pointer;
 }
 .grid-tile {
-  position:absolute;
+  position: absolute;
   transition: 0.5s ease;
   border-radius: 12px;
   height: 100%;
@@ -102,16 +98,14 @@ grid-item-overlay {
 }
 
 grid-item:hover grid-item-overlay {
-  
   background-color: #843a3a;
   z-index: 1;
   opacity: 0.3;
 }
 
-h1 {
+h1#categories {
   position: relative;
-  font-size: 2.5vw;
+  font-size: 1.8vw;
   margin-left: 32px;
   align-self: flex-start;
 }
-
