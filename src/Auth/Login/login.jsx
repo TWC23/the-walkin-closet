@@ -1,10 +1,20 @@
 import { useNavigate } from "react-router-dom";
+import { signInWithGoogle } from "../../FirebaseFunctions/firebase";
 import Navbar from "../../LandingPage/Components/Navbar/navbar";
 import Footer from "../../LandingPage/Components/Footer/footer";
 import './login.css';
 
 const Login = () => {
     const navigate = useNavigate();
+    const googleLogin = () => {
+        signInWithGoogle()
+            .then((result) => {
+                console.log(result);
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+    }
 
     return (
         <>
@@ -28,7 +38,7 @@ const Login = () => {
                     <a href="#" className="forgot-password">Forgot password</a>
 
                     <button className="login-button"><p>Login</p></button>
-                    <button className="google-login">
+                    <button className="google-login" onClick = { googleLogin }>
                         <img
                         src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png"
                         alt="Trees"

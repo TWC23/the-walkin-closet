@@ -1,6 +1,7 @@
-import { db, storage } from "../firebase-config";
+import { db, storage, auth, provider } from "../firebase-config";
 import { collection, addDoc } from "firebase/firestore";
 import { ref, uploadBytes } from "firebase/storage";
+import { signInWithPopup } from "firebase/auth";
 
 export const setOrders = async (
   name,
@@ -8,17 +9,16 @@ export const setOrders = async (
   email,
   quantity,
   instructions,
-  address,
-  
+  address
 ) => {
   try {
     const order = await addDoc(collection(db, "Orders"), {
-      "Organization": name,
+      Organization: name,
       "Contact Number": contact,
-      "email": email,
-      "quantity": quantity,
-      "instructions": instructions,
-      "address": address,
+      email: email,
+      quantity: quantity,
+      instructions: instructions,
+      address: address,
     });
 
     return order;
@@ -42,3 +42,6 @@ export const uploadImages = async (name, file) => {
     console.log(error);
   }
 };
+
+// google sign in func
+export const signInWithGoogle = () => signInWithPopup(auth, provider);
