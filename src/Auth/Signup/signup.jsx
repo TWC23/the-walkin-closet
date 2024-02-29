@@ -86,7 +86,7 @@ const SignUp = () => {
                         <p>Sign in with Google</p>
                     </button>
 
-                    <div>
+                    <div className="link-to-login">
                         <p>Already have an account? <a href="/login" onClick={() => navigate("/login")}>Login</a></p>
                     </div>
                     

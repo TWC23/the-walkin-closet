@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 
 .navbar {
   width: 100%;
@@ -46,20 +47,19 @@
   /* border-radius: 15px; */
   border-width: 15px;
   border: white;
-  box-shadow: 0 0 6px rgb(166, 159, 255);
+  box-shadow: 0 0 6px #b98e8e;
   outline: none;
   padding: 10px;
   font-size: 20px;
 }
 
 .input-container input:focus {
-  box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset,
-    0 0 16px rgb(125, 115, 255);
+  box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 16px #8a4343;
   outline: 0 none;
 }
 
 .loginContainer label {
-  font-family: "Inter", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 500;
 }
 
@@ -72,6 +72,7 @@
 }
 
 .loginContainer a.forgot-password {
+  font-family: "Noto Sans", sans-serif;
   align-self: flex-end;
   margin-right: 40px;
 }
@@ -93,9 +94,14 @@
 }
 
 .login-button p {
+  font-family: "Noto Sans", sans-serif;
   color: white;
   font-size: 20px;
-  margin-top: 13px;
+  margin-top: 10px;
+}
+
+.link-to-signup {
+  font-family: "Noto Sans", sans-serif;
 }
 
 .google-login {
@@ -121,5 +127,6 @@
 }
 
 .google-login p {
+  font-family: "Noto Sans", sans-serif;
   font-size: 20px;
 }

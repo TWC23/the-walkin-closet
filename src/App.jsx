@@ -17,8 +17,7 @@ const App = () => {
         <Route path="/bulk-order" Component={BulkOrder}></Route>
 
         {/* Temporay landing page */}
-        <Route path="/" Component={Login}></Route>
-        <Route path="/comingsoon" Component={ComingSoonLandingPage}></Route>
+        <Route path="/" Component={ComingSoonLandingPage}></Route>
         <Route path="/login" Component={Login}></Route>
         <Route path="/signup" Component={SignUp}></Route>
       </Routes>
