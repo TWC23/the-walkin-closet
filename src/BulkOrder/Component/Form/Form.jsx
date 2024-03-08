@@ -8,7 +8,7 @@ import {
 } from "../../../FirebaseFunctions/firebase";
 import PopUp from "../../../customs/popup";
 import { useNavigate, useParams } from "react-router-dom";
-import Navbar from "../../../LandingPage/Components/Navbar/navbar";
+import Navbar from "../../../Navbar/navbar";
 import { OrderFiller } from "../../../../src/assets/index.js";
 
 // TODO: Add pattern param to input fields for validation

@@ -3,8 +3,8 @@ import { auth } from "../../firebase-config";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { signInWithGoogle } from "../../FirebaseFunctions/firebase";
-import Navbar from "../../LandingPage/Components/Navbar/navbar";
-import Footer from "../../LandingPage/Components/Footer/footer";
+import Navbar from "../../Navbar/navbar";
+import Footer from "../../Footer/footer";
 import "./signup.css";
 
 const SignUp = () => {

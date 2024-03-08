@@ -1,4 +1,4 @@
-import Navbar from "../../../LandingPage/Components/Navbar/navbar";
+import Navbar from "../../../Navbar/navbar";
 import "./thanks.css";
 const ThanksPage = () => {
   return (

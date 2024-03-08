@@ -3,16 +3,25 @@
 nav {
   position: relative;
   font-family: "Poppins", sans-serif;
-
   display: flex;
   flex-shrink: 0;
   background: #dce0e4;
   backdrop-filter: blur(2px);
   flex-direction: row;
-
+  height: 100%;
+  width: 100%;
   overflow: hidden;
+  
+  /* overflow: hidden; */
+  overflow: visible;
   justify-content: center;
   align-items: center;
+}
+
+nav ul li dropdown{
+  position: absolute;
+  
+  
 }
 
 nav a {
@@ -43,6 +52,10 @@ nav > ul a {
   text-decoration: none;
   color: #231f20;
 }
+
+
+
+
 
 nav > ul li a:hover {
   text-decoration: underline;

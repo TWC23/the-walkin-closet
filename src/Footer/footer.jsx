@@ -1,4 +1,4 @@
-import { InstagramLogo } from "../../../assets/index";
+import { InstagramLogo } from "../assets/index";
 import "./footer.css"
 
 const Footer = () => {

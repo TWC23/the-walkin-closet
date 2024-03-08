@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import "./bulkOrder.css";
-import Navbar from "../LandingPage/Components/Navbar/navbar";
+import Navbar from "../Navbar/navbar";
 
 const BulkOrder = () => {
 

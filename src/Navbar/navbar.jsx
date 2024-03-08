@@ -1,5 +1,5 @@
 // react imports
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 // toast imports
@@ -7,10 +7,18 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 // asset imports
-import { bag, Profile, favorite, search, logo, walkincloset, UpdatedLogo } from '../../../assets/index';
+import {
+  bag,
+  Profile,
+  favorite,
+  search,
+  logo,
+  walkincloset,
+  UpdatedLogo,
+} from "../assets/index";
 
 // component imports
-import DropdownMenu from "../DropdownMenu/dropdown";
+import DropdownMenu from "../LandingPage/Components/DropdownMenu/dropdown";
 
 // css imports
 import "./navbar.css";
@@ -65,16 +73,9 @@ const Navbar = () => {
             College Merch
           </a>
         </li>
-        <li>
-          <div
-            className="menu"
-            onMouseEnter={toggleDropdown}
-            onMouseLeave={toggleDropdown}
-          >
-            <img src={Profile} alt="" />
-            {/* <DropdownMenu /> */}
-            {isDropdownOpen && <DropdownMenu />}
-          </div>
+        <li onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
+          <img src={Profile} alt="" />
+          <dropdown>{isDropdownOpen && <DropdownMenu />}</dropdown>
         </li>
       </ul>
 
