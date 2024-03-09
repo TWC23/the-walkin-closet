@@ -1,17 +1,32 @@
 .storeBase {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(4, 300px);
+  grid-gap: 2em;
+  padding-top: 2em;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1350px) {
   .storeBase {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 300px);
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 980px) {
   .storeBase {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 300px);
   }
+}
+
+@media (max-width: 660px) {
+  .storeBase {
+    grid-template-columns: 300px;
+  }
+}
+
+.storeBase .cards {
+  border-radius: 16px;
+  box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.1);
 }
