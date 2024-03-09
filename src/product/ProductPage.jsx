@@ -11,8 +11,8 @@ function ProductPage() {
           <prod-images></prod-images>
           <prod-details></prod-details>
         </details-section>
-        <recommendations></recommendations>
-        <reviews></reviews>
+        <prod-recommendations></prod-recommendations>
+        <prod-reviews></prod-reviews>
       </product-page>
       <Footer/>
     </>
