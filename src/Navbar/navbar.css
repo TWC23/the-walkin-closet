@@ -14,7 +14,7 @@ nav {
   
   /* overflow: hidden; */
   overflow: visible;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -29,9 +29,9 @@ nav a {
 }
 
 .logo-img {
-  width: 40%;
-  aspect-ratio: 3/2;
-  object-fit: contain;
+  /* width: 35%; */
+  width: 45%;  
+  object-fit:cover;
   mix-blend-mode: color-burn;
 }
 
@@ -39,13 +39,14 @@ nav > ul {
   padding-top: 20px;
   /* color: #231f20; */
 
-  font-size: 18px;
+  font-size: 1.1vw;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   list-style: none;
   display: flex;
-  gap: 40px;
+  flex-direction: row;
+  gap: 2vw;
 }
 
 nav > ul a {
