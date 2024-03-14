@@ -38,14 +38,11 @@ const Login = () => {
 
   return (
     <>
-      <div className="navbar">
-        <Navbar />
-      </div>
-
+      <Navbar />
       <div className="loginBase">
         <div className="loginContainer">
-          <h1>Login</h1>
-
+          <h1>Log in to your account</h1>
+          <below-login>Welcome Back! Please enter your details</below-login>
           <div className="input-container">
             <label>Username</label>
             <input
@@ -69,9 +66,11 @@ const Login = () => {
             />
           </div>
 
-          <a href="#" className="forgot-password">
-            Forgot password
-          </a>
+          <div className="forgopass">
+            <a href="#" className="forgot-password">
+              Forgot password
+            </a>
+          </div>
 
           <button className="login-button" onClick={login}>
             <p>Login</p>
@@ -93,11 +92,8 @@ const Login = () => {
               </a>
             </p>
           </div>
+          <Footer />
         </div>
-      </div>
-
-      <div className="footer">
-        <Footer />
       </div>
     </>
   );

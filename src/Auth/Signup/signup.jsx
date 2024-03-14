@@ -37,14 +37,13 @@ const SignUp = () => {
 
   return (
     <>
-      <div className="navbar">
-        <Navbar />
-      </div>
-
+      <Navbar />
       <div className="signupBase">
         <div className="signupContainer">
-          <h1>Create Account</h1>
-
+          <h1>Sign Up</h1>
+          <below-signup>
+            Let&apos;s set you up with a personal account
+          </below-signup>
           <div className="input-container">
             <label>Name</label>
             <input type="text" placeholder="John Doe" required />
@@ -96,11 +95,8 @@ const SignUp = () => {
               </a>
             </p>
           </div>
+          <Footer />
         </div>
-      </div>
-
-      <div className="footer">
-        <Footer />
       </div>
     </>
   );
