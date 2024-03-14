@@ -50,7 +50,7 @@ below-signup {
   border: white;
   box-shadow: 0 0 6px #b98e8e;
   outline: none;
-  padding: 1em 0.5em;
+  padding: 1.3em 0.75em;
 }
 
 .input-container input:focus {

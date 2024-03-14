@@ -73,7 +73,7 @@ const Login = () => {
           </div>
 
           <button className="login-button" onClick={login}>
-            <p>Login</p>
+            <p>Sign in</p>
           </button>
           <button className="google-login" onClick={googleLogin}>
             <img
