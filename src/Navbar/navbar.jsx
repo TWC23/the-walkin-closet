@@ -75,7 +75,7 @@ const Navbar = () => {
         </li>
         <li onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
           <img src={Profile} alt="" />
-          <dropdown>{isDropdownOpen && <DropdownMenu />}</dropdown>
+          <drop-down>{isDropdownOpen && <DropdownMenu />}</drop-down>
         </li>
       </ul>
 
