@@ -34,16 +34,17 @@ landing-wrapper {
   align-items: center;
   justify-items: center;
   grid-template-areas:
-    "car"
-    "hi"
-    "nea"
-    "fav";
+  "car"
+  "hi"
+  "nea"
+  "fav";
 }
 
-@media (min-width: 1048px) {
+@media (min-width: 968px) {
   landing-wrapper {
-    grid-template-columns: 1.8fr 1fr 1fr;
-    grid-template-rows: 22em;
+    grid-template-columns: max-content 1fr 1fr;
+    margin: 0 1em 0 4em;
+    grid-template-rows: 20em;
     grid-template-areas:
       "car hi hi"
       "car nea fav";
@@ -55,7 +56,12 @@ landing-wrapper {
 
   landing-highlight {
     background-color: #F0DBC9;
-    width: 100%;
+    width: 95%;
     height: 100%;
+  }
+
+  carousel {
+    width: max-content;
+    height: 80vh;
   }
 }
