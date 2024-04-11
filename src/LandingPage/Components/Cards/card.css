@@ -1,0 +1,15 @@
+.card-image {
+  height: 100%;
+  width: 100%;
+  border-radius: 1.25em;
+  overflow: hidden;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.card-image:hover {
+  cursor: pointer;
+  box-shadow: 0 0 20px #afb3b7;
+}
+
