@@ -41,7 +41,7 @@ const OrderForm = () => {
   };
 
   return (
-    <>
+    <varsity-page-wrapper>
       <Navbar />
       <order-form>
         <PopUp onClose={closeHandler} show={visibility} title={heading}>
@@ -89,7 +89,7 @@ const OrderForm = () => {
                 <upload-input>
                   <file-name>{design?.name}</file-name>
                   <label className="upload-file" htmlFor="formId2">
-                    Upload
+                    <p>Upload</p>
                     <input
                       name=""
                       type="file"
@@ -108,7 +108,7 @@ const OrderForm = () => {
           </form-content>
         </form-body>
       </order-form>
-    </>
+    </varsity-page-wrapper>
   );
 };
 
