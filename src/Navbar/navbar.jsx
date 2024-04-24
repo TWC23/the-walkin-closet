@@ -34,50 +34,67 @@ const Navbar = () => {
 
   return (
     <nav>
-      <a href="/" onClick={() => navigate("/")}>
-        <img src={UpdatedLogo} alt="TWC logo" className="logo-img" />
-      </a>
-      <ul>
-        <li>
-          <a href="#" onClick={notify}>
-            Men
-          </a>
-        </li>
-        <li>
-          <a href="#" onClick={notify}>
-            Women
-          </a>
-        </li>
-        <li>
-          <a href="#" onClick={notify}>
-            Blog
-          </a>
-        </li>
-        <li>
-          <a href="#" onClick={notify}>
-            Originals
-          </a>
-        </li>
-        <li>
-          <a href="#" onClick={notify}>
-            Boutique Boulevard
-          </a>
-        </li>
-        <li>
-          <a href="#" onClick={notify}>
-            Rentals
-          </a>
-        </li>
-        <li>
-          <a href="/bulk-order" onClick={() => navigate("/bulk-order")}>
-            College Merch
-          </a>
-        </li>
-        <li onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
-          <img src={Profile} alt="" />
-          <drop-down>{isDropdownOpen && <DropdownMenu />}</drop-down>
-        </li>
-      </ul>
+      <nav-logo>
+        <a href="/" onClick={() => navigate("/")}>
+          <img src={UpdatedLogo} alt="TWC logo" className="logo-img" />
+        </a>
+      </nav-logo>
+      <nav-links>
+        <ul>
+          <li>
+            <a href="#" onClick={notify}>
+              Men
+            </a>
+          </li>
+          <li>
+            <a href="#" onClick={notify}>
+              Women
+            </a>
+          </li>
+          <li>
+            <a href="#" onClick={notify}>
+              Blog
+            </a>
+          </li>
+          <li>
+            <a href="#" onClick={notify}>
+              Originals
+            </a>
+          </li>
+          <li>
+            <a href="#" onClick={notify}>
+              Boutique Boulevard
+            </a>
+          </li>
+          <li>
+            <a href="#" onClick={notify}>
+              Rentals
+            </a>
+          </li>
+          <li>
+            <a href="/bulk-order" onClick={() => navigate("/bulk-order")}>
+              College Merch
+            </a>
+          </li>
+        </ul>
+      </nav-links>
+      <nav-icons>
+        <ul>
+          <li>
+            <a href="/cart">
+              <img src={bag} alt="" />
+            </a>
+          </li>
+          <li
+            className="profile-btn"
+            onMouseEnter={toggleDropdown}
+            onMouseLeave={toggleDropdown}
+          >
+            <img src={Profile} alt="" />
+            <drop-down>{isDropdownOpen && <DropdownMenu />}</drop-down>
+          </li>
+        </ul>
+      </nav-icons>
 
       <ToastContainer
         position="top-center"
