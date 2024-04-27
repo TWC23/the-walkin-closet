@@ -19,8 +19,10 @@ nav {
 }
 
 nav-links ul, nav-icons ul{
-  padding-top: 20px;
+  /* padding-top: 20px; */
   /* color: #231f20; */
+  padding: 0;
+  margin: 0;
 
   font-size: 1.1vw;
   font-style: normal;
@@ -31,6 +33,10 @@ nav-links ul, nav-icons ul{
   flex-direction: row;
   gap: 2vw;
 
+  & li {
+    display: flex;
+    align-items: center;
+  }
 }
 
 nav nav-icons ul li drop-down{

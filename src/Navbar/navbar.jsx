@@ -57,8 +57,13 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="#" onClick={notify}>
-              Originals
+            <a href="/varsity" onClick={() => navigate("/varsity")} style={{
+              backgroundColor: "red",
+              padding: "0.5em",
+              borderRadius: "0.4em",
+              color: "ivory"
+            }}>
+              Varsity
             </a>
           </li>
           <li>

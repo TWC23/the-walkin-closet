@@ -10,6 +10,7 @@ import ProductPage from "./product/ProductPage";
 import Cart from "./Cart/cart";
 import OrderForm from "./Varsities/Order-Form/OrderForm";
 import checkout from "./Checkout/checkout";
+import Varsity from "./Varsities/Varisty Landing/varsity-landing";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/cart" Component={Cart} />
         <Route path="/varsity-form" Component={OrderForm} />
         <Route path="/checkout" Component={checkout} />
+        <Route path="/varsity" element={<Varsity />} />
 
         {/* Temporay landing page */}
         <Route path="/" Component={ComingSoonLandingPage}></Route>
