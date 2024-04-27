@@ -18,9 +18,9 @@ const Cart = () => {
       <cart-con-margin>
         <cart-con>
           <h1 className="cart-hd">Shopping Cart</h1>
-          <cart-items>
+          {/* <cart-items>
             <CartItem product={{ name: "Hoodie", quantity: 1, price: 100 }} />
-          </cart-items>
+          </cart-items> */}
         </cart-con>
       </cart-con-margin>
     </>
