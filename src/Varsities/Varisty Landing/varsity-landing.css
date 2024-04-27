@@ -4,7 +4,7 @@ showcase-flex {
   display: flex;
   gap: 1em;
   flex-wrap: wrap;
-  background-image: linear-gradient(179deg, #d96212, rgb(200, 102, 31) 100%);
+  background-image: linear-gradient(179deg, #8a4343, rgb(144, 92, 55) 100%);
   @media (min-width: 768px) {
     padding-left: 3%;
     & > * {
@@ -23,7 +23,7 @@ showcase-flex {
    width: 10em;
    margin: 1em 0.8em;
    border-radius: 1em;
-   background: #8a4343;
+   background: black;
    border: none;
    transition: all 0.2s ease-in-out;
    color: white;
@@ -33,12 +33,15 @@ showcase-flex {
     transform: scale(1.1);
     box-shadow: 0 0 12px rgb(199, 199, 199);
   }
+  & img[alt="Varsity-Image"] {
+    width: 100%;
+    padding: 5% 3%;
+    object-fit: contain;
+  }
 }
 
 span.outer {
-  font-size: 4.2em;
-  font-weight: bold;
-  font-family: "Inter", sans-serif;
+  font: bold 4.2em "Inter", sans-serif;
 }
 
 span.inner {

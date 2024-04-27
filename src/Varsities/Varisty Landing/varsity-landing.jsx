@@ -13,7 +13,7 @@ function VarsityLanding() {
           <span className="outer">Rep Your<br />Batch.<span className="inner"> Rep<br />Your Style.</span></span>
           <button onClick={() => navigate("/varsity-form")}>Pre-order now</button>
         </showcase-left>
-        <img alt="Kapde"></img>
+        <img src="https://yourdesignstore.s3.amazonaws.com/uploads/yds/productImages/full/1629717737612384e9619ceYDS_Product_4@2x.jpg" alt="Varsity-Image"></img>
       </showcase-flex>
     </>
   );
