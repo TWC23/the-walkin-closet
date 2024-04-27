@@ -7,7 +7,7 @@ import {
   uploadImages,
 } from "../../FirebaseFunctions/firebase";
 import { useNavigate } from "react-router-dom";
-import "./orderForm.css";
+import "./OrderForm.css";
 
 const OrderForm = () => {
   const [units, setUnits] = useState();
