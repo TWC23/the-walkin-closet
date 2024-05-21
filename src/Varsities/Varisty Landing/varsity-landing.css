@@ -19,15 +19,15 @@ showcase-flex {
     justify-content: center;
   }
   & button {
-   height: 3em;
-   width: 10em;
-   margin: 1em 0.8em;
-   border-radius: 1em;
-   background: black;
-   border: none;
-   transition: all 0.2s ease-in-out;
-   color: white;
-   font-size: 1em;
+    height: 3em;
+    width: 10em;
+    margin: 1em 0.8em;
+    border-radius: 1em;
+    background: black;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    color: white;
+    font-size: 1em;
   }
   & button:hover {
     transform: scale(1.1);
@@ -37,14 +37,83 @@ showcase-flex {
     width: 100%;
     padding: 5% 3%;
     object-fit: contain;
+    mix-blend-mode: hard-light;
+  }
+  & div.outer {
+    font: bold 4.2em "Inter", sans-serif;
+  }
+  & div.inner {
+    font-weight: 500;
   }
 }
 
-span.outer {
-  font: bold 4.2em "Inter", sans-serif;
+showcase-flex:nth-child(3) {
+  background-image: none;
+  justify-content: center;
+  & > * {
+    padding: 5% 3%;
+  }
+  & > div.description {
+    font: 600 2em "Inter", sans-serif;
+    text-align: center;
+    & > div.sub-description {
+      font-size: 1rem;
+      font-weight: normal;
+    }
+  }
+  @media (min-width: 768px) {
+    padding-left: 0;
+    & > * {
+      height: unset;
+    }
+  }
+  @media (width <= 410px) {
+    & > div.description {
+      font-size: 1.3em;
+      & > div.sub-description {
+        font-size: 0.65rem;
+      }
+    }
+  }
 }
 
-span.inner {
-  font-weight: 500;
+image-flex {
+  display: flex;
+  padding-bottom: 3%;
+  justify-content: center;
+  & img {
+    width: 50%;
+  }
 }
 
+showcase-flex:nth-child(5) {
+  background-image: none;
+  background-color: black;
+  color: white;
+  gap: 2em;
+  padding: 3%;
+  align-items: center;
+  & img[alt="TWC logo"] {
+    max-width: 100%;
+    aspect-ratio: 3/1;
+    object-fit: contain;
+    filter: invert(100);
+  }
+  @media (min-width: 1024px) {
+    & p {
+      font-family: "Inter", sans-serif;
+      padding-right: 25%;
+    }
+  }
+  @media (min-width: 768px) {
+    & > * {
+      height: unset;
+    }
+    & img[alt="TWC logo"] {
+      aspect-ratio: unset;
+    }
+  }
+  @media (max-width: 768px) {
+    gap: 1em;
+  }
+}
