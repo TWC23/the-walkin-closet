@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import PropTypes from "prop-types";
 import Navbar from "../Navbar/navbar";
 import PaytmTestPayment from "../Payment/paytm-config";
@@ -43,8 +43,8 @@ const checkout = (products) => {
           </checkout-info>
           <checkout-info>
             <h2>Review your order</h2>
-            <hr style={{width: "100%"}}/>
-            <hr style={{width: "100%"}}/>
+            <hr style={{ width: "100%" }} />
+            <hr style={{ width: "100%" }} />
             <PaytmTestPayment />
           </checkout-info>
         </into-2>

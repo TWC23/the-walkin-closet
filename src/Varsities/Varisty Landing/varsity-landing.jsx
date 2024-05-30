@@ -53,7 +53,14 @@ function VarsityLanding() {
       </image-flex>
       <showcase-flex>
         <p>
-          Crafted with the spirit of MIT Manipal&apos;s Batch of &apos;25 in mind, this exclusive collection by The WalkinCloset captures the energy, camaraderie, and shared experiences that will define your unique year. Wear it with pride and celebrate the memories you&apos;ll make together, both inside the classroom and beyond. This limited-edition merch is more than just clothing; it&apos;s a symbol of your place in Manipal history, a reminder of the bonds you&apos;ll forge, and a testament to the incredible journey that awaits
+          Crafted with the spirit of MIT Manipal&apos;s Batch of &apos;25 in
+          mind, this exclusive collection by The WalkinCloset captures the
+          energy, camaraderie, and shared experiences that will define your
+          unique year. Wear it with pride and celebrate the memories you&apos;ll
+          make together, both inside the classroom and beyond. This
+          limited-edition merch is more than just clothing; it&apos;s a symbol
+          of your place in Manipal history, a reminder of the bonds you&apos;ll
+          forge, and a testament to the incredible journey that awaits
         </p>
         <img src={UpdatedLogo} alt="TWC logo" />
       </showcase-flex>

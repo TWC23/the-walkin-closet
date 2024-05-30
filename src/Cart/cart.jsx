@@ -1,17 +1,8 @@
-import React from "react";
-import { useState } from "react";
-
 import Navbar from "../Navbar/navbar";
 import "./cart.css";
 import CartItem from "../customs/cart-item/CartItem";
 
 const Cart = () => {
-
-  
-
-
-
-
   return (
     <>
       <Navbar />

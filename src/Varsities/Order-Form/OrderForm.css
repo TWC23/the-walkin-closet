@@ -36,7 +36,8 @@ form-content {
   gap: 1em;
 }
 
-form-content input, file-name {
+form-content input,
+file-name {
   font-size: 1.25em;
   height: 1.5em;
   width: 15em;
@@ -58,7 +59,16 @@ form-content label {
   padding-right: 1em;
 }
 
-#root > varsity-page-wrapper > order-form > form-body > form-content > upload-files > input-field > upload-input > label > p {
+#root
+  > varsity-page-wrapper
+  > order-form
+  > form-body
+  > form-content
+  > upload-files
+  > input-field
+  > upload-input
+  > label
+  > p {
   margin-top: 20%;
   margin-bottom: 20%;
 }

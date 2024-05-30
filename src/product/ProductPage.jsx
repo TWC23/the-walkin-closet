@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "../Navbar/navbar";
 import Footer from "../Footer/footer";
 import ImageGallery from "react-image-gallery";

@@ -4,11 +4,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { useState, useEffect } from "react";
-import popupStyles from "./popup.module.css"
+import popupStyles from "./popup.module.css";
 
 const PopUp = (props) => {
   const [show, setShow] = useState(false);
-
 
   const closeHandler = (e) => {
     setShow(false);
@@ -30,7 +29,6 @@ const PopUp = (props) => {
       <div className={popupStyles.popup}>
         <h2>{props.title}</h2>
         <span className={popupStyles.close} onClick={closeHandler}>
-          
           &times;
         </span>
         <div className={popupStyles.content}>{props.children}</div>
@@ -40,9 +38,9 @@ const PopUp = (props) => {
 };
 
 PopUp.propTypes = {
-    title: PropTypes.string.isRequired,
-    show: PropTypes.bool.isRequired,
-    onClose: PropTypes.func.isRequired,
+  title: PropTypes.string.isRequired,
+  show: PropTypes.bool.isRequired,
+  onClose: PropTypes.func.isRequired,
 };
 
 export default PopUp;
