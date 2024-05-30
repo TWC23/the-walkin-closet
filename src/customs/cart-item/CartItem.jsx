@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import PropTypes from "prop-types";
 import "./cart-item.css";
 
 const CartItem = (product) => {
-  const [productQuantity, setProductQuantity] = useState(product.product.quantity);
+  const [productQuantity, setProductQuantity] = useState(
+    product.product.quantity
+  );
 
   const handleIncrement = () => {
     setProductQuantity(productQuantity + 1);

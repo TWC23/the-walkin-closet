@@ -11,14 +11,15 @@ nav {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  
+
   /* overflow: hidden; */
   overflow: visible;
   justify-content: space-between;
   align-items: center;
 }
 
-nav-links ul, nav-icons ul{
+nav-links ul,
+nav-icons ul {
   /* padding-top: 20px; */
   /* color: #231f20; */
   padding: 0;
@@ -39,25 +40,20 @@ nav-links ul, nav-icons ul{
   }
 }
 
-nav nav-icons ul li drop-down{
+nav nav-icons ul li drop-down {
   position: absolute;
-  
-  
 }
 
 nav a {
   display: inline-block;
-   /* or inline */
-   
+  /* or inline */
 }
-
-
 
 .logo-img {
   /* width: 35%; */
-  margin-left:40px;
-  width: 45%;  
-  object-fit:cover;
+  margin-left: 40px;
+  width: 45%;
+  object-fit: cover;
   mix-blend-mode: color-burn;
 }
 
@@ -80,11 +76,7 @@ nav ul a {
   color: #231f20;
 }
 
-
-
-
-
-nav > nav-icons  li a:hover {
+nav > nav-icons li a:hover {
   text-decoration: underline;
   text-underline-offset: 5px;
   transition: 0.3s;

@@ -1,5 +1,5 @@
 // react imports
-import React, { useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 // toast imports
@@ -57,12 +57,16 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="/varsity" onClick={() => navigate("/varsity")} style={{
-              backgroundColor: "red",
-              padding: "0.5em",
-              borderRadius: "0.4em",
-              color: "ivory"
-            }}>
+            <a
+              href="/varsity"
+              onClick={() => navigate("/varsity")}
+              style={{
+                backgroundColor: "red",
+                padding: "0.5em",
+                borderRadius: "0.4em",
+                color: "ivory",
+              }}
+            >
               Varsity
             </a>
           </li>

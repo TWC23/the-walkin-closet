@@ -1,4 +1,3 @@
-
 import ComingImage from "./Components/Image display/ComingImage";
 import "./ComingSoonLandingPage.css";
 import Navbar from "../Navbar/navbar";
@@ -7,11 +6,9 @@ import Footer from "../Footer/footer";
 export const ComingSoonLandingPage = () => {
   return (
     <>
-      <Navbar/>
+      <Navbar />
       <ComingImage />
-      <Footer/>
-
-
+      <Footer />
 
       {/* {/* <div className="coming-soon">
         <img src={ComingSoonBlur} alt="Coming Soon" />
@@ -20,7 +17,7 @@ export const ComingSoonLandingPage = () => {
       </div>
 
       <div className="footer">
-      </div> */} 
+      </div> */}
     </>
   );
 };
