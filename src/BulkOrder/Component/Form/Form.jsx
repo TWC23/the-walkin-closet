@@ -6,7 +6,7 @@ import {
   uploadFiles,
   uploadImages,
 } from "../../../FirebaseFunctions/firebase";
-import PopUp from "../../../customs/popup";
+import PopUp from "../../../customs/popup/popup.jsx";
 import { useNavigate, useParams } from "react-router-dom";
 import Navbar from "../../../Navbar/navbar";
 import { OrderFiller } from "../../../../src/assets/index.js";

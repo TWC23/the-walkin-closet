@@ -1,0 +1,37 @@
+@import "/node_modules/react-image-gallery/styles/css/image-gallery.css";
+
+details-section{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 10px;
+    margin: 1vw;
+    
+    
+}
+ prod-images{
+    width: 50%;
+ }
+
+prod-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+prod-title{
+    margin-bottom: 1vh;
+    font-size: 3vw;
+}
+prod-desc{
+    margin-bottom: 5vh;
+    font-size: 1.5vw;
+}
+prod-price{
+    font-size: 1.2vw;
+}

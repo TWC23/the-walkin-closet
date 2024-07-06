@@ -14,28 +14,15 @@ nav {
 
   /* overflow: hidden; */
   overflow: visible;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 
-nav ul li dropdown {
-  position: absolute;
-}
-
-nav a {
-  display: inline-block; /* or inline */
-}
-
-.logo-img {
-  /* width: 35%; */
-  width: 45%;
-  object-fit: cover;
-  mix-blend-mode: color-burn;
-}
-
-nav > ul {
-  padding-top: 20px;
+nav-links ul, nav-icons ul{
+  /* padding-top: 20px; */
   /* color: #231f20; */
+  padding: 0;
+  margin: 0;
 
   font-size: 1.1vw;
   font-style: normal;
@@ -45,14 +32,52 @@ nav > ul {
   display: flex;
   flex-direction: row;
   gap: 2vw;
+
+  & li {
+    display: flex;
+    align-items: center;
+  }
 }
 
-nav > ul a {
+nav nav-icons ul li drop-down{
+  position: absolute;
+}
+
+nav a {
+  display: inline-block;
+   /* or inline */
+   
+}
+
+
+
+.logo-img {
+  /* width: 35%; */
+  width: 45%;  
+  object-fit:cover;
+  mix-blend-mode: color-burn;
+}
+
+/* nav > ul {
+  padding-top: 20px;
+  
+
+  font-size: 1.1vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+} */
+
+nav ul a {
   text-decoration: none;
   color: #231f20;
 }
 
-nav > ul li a:hover {
+nav > nav-icons  li a:hover {
   text-decoration: underline;
   text-underline-offset: 5px;
   transition: 0.3s;
