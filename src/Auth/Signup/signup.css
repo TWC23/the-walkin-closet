@@ -20,7 +20,8 @@
   width: 100%;
   background-color: rgba(238, 238, 238, 0.9333);
   border-radius: 0px 20px 0px 0px;
-  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25) inset,
+  box-shadow:
+    0px 1px 4px 0px rgba(0, 0, 0, 0.25) inset,
     0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -54,7 +55,9 @@ below-signup {
 }
 
 .input-container input:focus {
-  box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 16px #8a4343;
+  box-shadow:
+    0 1px 1px rgba(229, 103, 23, 0.075) inset,
+    0 0 16px #8a4343;
   outline: 0 none;
 }
 

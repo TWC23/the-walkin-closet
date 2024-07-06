@@ -9,7 +9,7 @@ export const setOrders = async (
   email,
   quantity,
   instructions,
-  address
+  address,
 ) => {
   try {
     const order = await addDoc(collection(db, "Orders"), {

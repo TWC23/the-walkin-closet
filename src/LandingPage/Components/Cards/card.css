@@ -1,10 +1,10 @@
 .card-image {
-  height: 100%;
-  width: 100%;
+  aspect-ratio: 3/2;
+  width: 80%;
   border-radius: 1.25em;
   overflow: hidden;
-  max-height: 100%;
   max-width: 100%;
+  position: relative;
   object-fit: cover;
 }
 
@@ -12,4 +12,3 @@
   cursor: pointer;
   box-shadow: 0 0 20px #afb3b7;
 }
-

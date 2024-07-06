@@ -1,11 +1,11 @@
 import { InstagramLogo } from "../assets/index";
-import "./footer.css"
+import "./footer.css";
 
 const Footer = () => {
-    return (
-        <footer>
-            <div className="footer-container">
-                {/* <div className="footer-links">
+  return (
+    <footer>
+      <div className="footer-container">
+        {/* <div className="footer-links">
                     <ul>
                         <li>
                             <a href="#">About Us</a>
@@ -21,25 +21,27 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div> */}
-                <div className="footer-social">
-                    <ul>
-                        {/* <li>
+        <div className="footer-social">
+          <ul>
+            {/* <li>
                             <a href="#">Facebook</a>
                         </li> */}
-                        <li>
-                            <a href="https://www.instagram.com/_thewalk.incloset/"><img src={InstagramLogo} /></a>
-                        </li>
-                        {/* <li>
+            <li>
+              <a href="https://www.instagram.com/_thewalk.incloset/">
+                <img src={InstagramLogo} />
+              </a>
+            </li>
+            {/* <li>
                             <a href="#">Twitter</a>
                         </li>
                         <li>
                             <a href="#">LinkedIn</a>
                         </li> */}
-                    </ul>
-                </div>
-            </div>
-        </footer>
-    )
-}
+          </ul>
+        </div>
+      </div>
+    </footer>
+  );
+};
 
 export default Footer;

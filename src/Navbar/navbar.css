@@ -11,17 +11,15 @@ nav {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  
+
   /* overflow: hidden; */
   overflow: visible;
   justify-content: space-evenly;
   align-items: center;
 }
 
-nav ul li dropdown{
+nav ul li dropdown {
   position: absolute;
-  
-  
 }
 
 nav a {
@@ -30,8 +28,8 @@ nav a {
 
 .logo-img {
   /* width: 35%; */
-  width: 45%;  
-  object-fit:cover;
+  width: 45%;
+  object-fit: cover;
   mix-blend-mode: color-burn;
 }
 
@@ -53,10 +51,6 @@ nav > ul a {
   text-decoration: none;
   color: #231f20;
 }
-
-
-
-
 
 nav > ul li a:hover {
   text-decoration: underline;

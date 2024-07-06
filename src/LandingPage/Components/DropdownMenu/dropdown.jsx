@@ -11,9 +11,7 @@ const Dropdown = () => {
     <div className="menu">
       <ul>
         <a href="/login" onClick={() => navigate("/login")}>
-          <li>
-            Login
-          </li>
+          <li>Login</li>
         </a>
       </ul>
     </div>

@@ -1,11 +1,10 @@
 *,
 *::after,
-*::before{
-    box-sizing: border-box;
+*::before {
+  box-sizing: border-box;
 }
 
-body{
-    margin: 0;
-background: #DCE0E4;
-
+body {
+  margin: 0;
+  background: #dce0e4;
 }

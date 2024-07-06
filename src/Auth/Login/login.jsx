@@ -18,7 +18,7 @@ const Login = () => {
       const user = await signInWithEmailAndPassword(
         auth,
         loginEmail,
-        loginPassword
+        loginPassword,
       );
       navigate("/");
     } catch (error) {
