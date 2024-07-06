@@ -21,6 +21,11 @@ const App = () => {
         <Route path="/thanks" Component={ThanksPage}></Route>
         <Route path="/order-form/:category" Component={Form}></Route>
         <Route path="/bulk-order" Component={BulkOrder}></Route>
+        <Route path="/product-details" Component={ProductPage} />
+        <Route path="/cart" Component={Cart} />
+        <Route path="/varsity-form" Component={OrderForm} />
+        <Route path="/checkout" Component={checkout} />
+        <Route path="/varsity" element={<Varsity />} />
 
         {/* Temporay landing page */}
         {/* <Route path="/" Component={ComingSoonLandingPage}></Route> */}
