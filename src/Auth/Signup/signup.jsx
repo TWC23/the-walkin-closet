@@ -27,7 +27,7 @@ const SignUp = () => {
       const user = await createUserWithEmailAndPassword(
         auth,
         signupEmail,
-        signupPassword
+        signupPassword,
       );
       navigate("/");
     } catch (error) {

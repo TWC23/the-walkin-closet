@@ -1,0 +1,14 @@
+.card-image {
+  aspect-ratio: 3/2;
+  width: 80%;
+  border-radius: 1.25em;
+  overflow: hidden;
+  max-width: 100%;
+  position: relative;
+  object-fit: cover;
+}
+
+.card-image:hover {
+  cursor: pointer;
+  box-shadow: 0 0 20px #afb3b7;
+}

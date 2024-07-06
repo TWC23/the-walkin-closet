@@ -11,7 +11,7 @@ nav {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  
+
   /* overflow: hidden; */
   overflow: visible;
   justify-content: space-between;
@@ -41,8 +41,6 @@ nav-links ul, nav-icons ul{
 
 nav nav-icons ul li drop-down{
   position: absolute;
-  
-  
 }
 
 nav a {
@@ -55,7 +53,6 @@ nav a {
 
 .logo-img {
   /* width: 35%; */
-  margin-left:40px;
   width: 45%;  
   object-fit:cover;
   mix-blend-mode: color-burn;
@@ -79,10 +76,6 @@ nav ul a {
   text-decoration: none;
   color: #231f20;
 }
-
-
-
-
 
 nav > nav-icons  li a:hover {
   text-decoration: underline;

@@ -1,0 +1,80 @@
+landing-carousel {
+  grid-area: car;
+}
+
+landing-highlight {
+  background-color: #f0dbc9;
+  grid-area: hi;
+}
+
+landing-highlight > h2 {
+  font-size: 3rem;
+  margin-top: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+landing-highlight > p {
+  font-weight: 540;
+  padding: 0 7vw;
+  text-align: center;
+}
+
+new-arrivals {
+  grid-area: nea;
+}
+
+our-favorites {
+  grid-area: fav;
+}
+
+new-arrivals,
+our-favorites {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+landing-wrapper {
+  display: grid;
+  gap: 1em;
+  align-items: center;
+  justify-items: center;
+  grid-template-areas:
+    "car"
+    "hi"
+    "nea"
+    "fav";
+}
+
+@media (min-width: 968px) {
+  landing-wrapper {
+    grid-template-columns: max-content 1fr 1fr;
+    margin: 0 1em 0 4em;
+    grid-template-rows: 20em;
+    grid-template-areas:
+      "car hi hi"
+      "car nea fav";
+  }
+
+  landing-highlight > h2 {
+    font-size: 3.5rem;
+  }
+
+  landing-highlight {
+    background-color: #f0dbc9;
+    width: 95%;
+    height: 100%;
+    border-radius: 1.5em;
+  }
+
+  carousel {
+    width: max-content;
+    height: 80vh;
+    padding: 0;
+  }
+
+  new-arrivals {
+    object-fit: contain;
+  }
+}

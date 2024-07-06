@@ -1,38 +1,38 @@
-heading{
-    font-size: 11vw;
+heading {
+  font-size: 11vw;
 }
 
-sub-head{
-    font-size: 4.2vw;
+sub-head {
+  font-size: 4.2vw;
 }
 
-message{
-    padding-left: 5%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    height: 85vh;
-    justify-content: flex-start;
+message {
+  padding-left: 5%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 85vh;
+  justify-content: flex-start;
 }
 
-
-thanks-body{
-    margin-top: 40px ;
-    justify-items: flex-end;
-    position: relative;
-    font-size: 1.6vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    font-weight: 500;
-    height: 100%;
+thanks-body {
+  margin-top: 40px;
+  justify-items: flex-end;
+  position: relative;
+  font-size: 1.6vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-weight: 500;
+  height: 100%;
 }
 
-next-heading,assistance-heading,greeting-heading{
-    font-weight: 600;
+next-heading,
+assistance-heading,
+greeting-heading {
+  font-weight: 600;
 }
 
-.email{
-    font-weight: 600;
+.email {
+  font-weight: 600;
 }
-
